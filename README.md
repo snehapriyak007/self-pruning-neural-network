@@ -11,7 +11,7 @@ Instead of manually pruning the model after training, this approach allows the n
 
 ---
 
-## 🧠 Basic Idea
+##  Basic Idea
 
 In a normal neural network, every weight is always active.
 In this project, each weight is paired with a **learnable gate parameter**.
@@ -30,7 +30,7 @@ This makes pruning **differentiable**, so it can be learned using backpropagatio
 
 ---
 
-## ⚙️ Training Objective
+## Training Objective
 
 The model is trained using a combination of two losses:
 
@@ -61,7 +61,7 @@ Total Loss = CrossEntropyLoss + λ × SparsityLoss
 
 ---
 
-## 📊 Results
+##  Results
 
 ### Gate Distribution (λ = 0.5)
 
@@ -89,7 +89,7 @@ Total Loss = CrossEntropyLoss + λ × SparsityLoss
 
 ---
 
-## 🚀 How to Run the Project
+##  STEPS
 
 ### Step 1: Install dependencies
 
@@ -117,7 +117,7 @@ This script prints:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 model.py          → PrunableLinear + SelfPruningNet
@@ -129,7 +129,7 @@ requirements.txt  → Dependencies
 
 ---
 
-## 🔍 Key Insights
+##  Key Insights
 
 * Neural networks are often **over-parameterized**
 * Many weights are not necessary for good performance
@@ -141,7 +141,7 @@ requirements.txt  → Dependencies
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 * Model is a simple MLP → accuracy is limited (~55–58%)
 * Results depend strongly on hyperparameter tuning
@@ -150,7 +150,7 @@ requirements.txt  → Dependencies
 
 ---
 
-## 💡 Future Improvements
+##  Future Improvements
 
 * Apply this method to **CNN architectures**
 * Add **hard threshold pruning**
@@ -165,7 +165,7 @@ requirements.txt  → Dependencies
 
 ---
 
-## 🏁 Conclusion
+##  Conclusion
 
 This project demonstrates that a neural network can **learn to prune itself during training** using learnable gates and sparsity regularization.
 
