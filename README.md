@@ -176,6 +176,4 @@ It highlights the trade-off between:
 
 ---
 
-## 👤 Author
 
-Student implementation for internship case study
